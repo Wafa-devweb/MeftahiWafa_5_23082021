@@ -1,0 +1,32 @@
+body {
+    font-family : 'Finger Paint', cursive ;
+    color : #7b5d46;
+}
+
+/*Colorfooter = '#684833';
+ColorHeader = '#92735f';
+ColorBody = '#7b5d46';*/
+
+/* Barre de nav/ header*/
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+footer {
+    background-color:#684833;
+}
+
+header{
+    background-color: #92735f;
+}
+main{
+    background-color:#7b5d46;
+    color: blanchedalmond;
+}
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #7b5d46;
+}
