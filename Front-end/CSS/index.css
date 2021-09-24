@@ -2,7 +2,13 @@ body {
     font-family : 'Finger Paint', cursive ;
     color : #7b5d46;
 }
-
+.navbar-expand-lg {
+    padding: 0px;
+    margin: 0 0 0 -5rem;
+}
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+}
 /*Colorfooter = '#684833';
 ColorHeader = '#92735f';
 ColorBody = '#7b5d46';*/
@@ -23,10 +29,137 @@ main{
     background-color:#7b5d46;
     color: blanchedalmond;
 }
-a {
-    text-decoration: none;
+a, p, h1, h3, h4, h5, h6 {
     color: blanchedalmond;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 .navbar-light .navbar-nav .nav-link.active {
     color: #7b5d46;
+}
+/**********corps de la pae avec la lise*********/
+@media (min-width: 768px){
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+.mt-4 {
+    margin-top: 1rem;
+}
+.grid {
+    display: grid;
+}
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: inherit;
+}
+
+:root {
+    tab-size: 4;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+.list-none {
+    background-color: blanchedalmond ;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 20px;
+    position: relative;
+}
+.list-none:hover {
+    transform:scale(1.01);
+    text-decoration: none;
+    list-style: none;
+}
+
+h2, .ProductPrice, .ProductDescription{
+    color: #7b5d46;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.w-full {
+    width: 100%;
+}
+.object-cover {
+    object-fit: cover;
+}
+.h-64 {
+    width: 10rem;
+}
+.rounded {
+    border-radius: 0.25rem;
+    color : #7b5d46;
+}
+img, video {
+    max-width: 100%;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+img {
+    border-style: solid;
+}
+.pt-4 {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.text-opacity-80 {
+    --tw-text-opacity: 0.8;
+}
+.text-black {
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+.text-justify {
+    text-align: justify;
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.fa-star {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #7b5d46;
+}
+.flex.items-center {
+    word-spacing: -1ch;
 }

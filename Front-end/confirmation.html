@@ -17,6 +17,7 @@
     <!-- Javascript -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" src="/JS/script.js"></script>
+    <script type="text/javascript" src="/JS/confirmation.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/confirmation.css">
     </head>
@@ -40,16 +41,20 @@
             </div>
         </nav>
       </header>
+    <main class="flex flex-col justify-center w-full py-16 my-4 rounded-lg bg-oniPink">
+        <p class="mb-4 text-4xl font-bold text-center">Félicitation, votre commande à bien été prise en compte !</p>
+        <p class="mb-4 text-xl text-center">Identifiant de votre commande : <span class="font-bold" id="commandId"></span></p>
+        <a class="inline-block px-4 py-2 mx-auto font-semibold text-center text-white uppercase bg-indigo-600 rounded" href="index.html">Retourner à l'accueil</a>
+      </main>
             <!-- Footer -->
             <footer class="py-4">
                 <ul class="list-inline text-center">
-                    <li class="list-inline-item"><a href="index.html" title="Accueil">Accueil</a></li>
+                    <li class="list-inline-item"><a href="/Front-end/index.html" title="Accueil">Accueil</a></li>
                     <li class="list-inline-item"><a href="mailto:orinoco@mail.com?subject=Contact" title="Contact">Contact</a>
                     </li>
                     <li class="list-inline-item"><a href="#" title="Mentions Légales">Mentions Légales</a></li>
                 </ul>
                 <p class="copyright text-center">Orinoco © 2021</p>
             </footer>
-            <script src="JS/confirmation.js"></script>
     </body>
 </html>
