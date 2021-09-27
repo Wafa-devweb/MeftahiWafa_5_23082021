@@ -1,3 +1,4 @@
+// Listing produit sur la page index
 fetch('http://localhost:3000/api/teddies/')
     .then(function(res) {
         return res.json()
@@ -6,8 +7,7 @@ fetch('http://localhost:3000/api/teddies/')
         console.log(data);
         let html = '';
         for( const item of data ) {
-        html+=` <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
-                    <div class="card border bg-light shadow p-3 mb-5 bg-body rounded">
+        html+=` <div class="card border shadow p-3 mb-5 bg-body rounded">
                         <div class="card-body">
                             <div class="row">
                                 <img src="${item.imageUrl}" class="img-fluid img-thumbnail p-1" alt="Peluche"></a>
@@ -19,10 +19,12 @@ fetch('http://localhost:3000/api/teddies/')
                                 </div>
                             </div>
                             <p class="card-text text-truncate">${item.description}</p>
-                            <a href="./Front-end/panier.html?id=${item._id}" class="btn btn-secondary">Acheter ce produit</a>
+                            <a href="produit.html?id=${item._id}" class="btn btn-primary">Voir le produit</a>
+                            <a href="panier.html?id=${item._id}" class="btn btn-secondary">Acheter ce produit</a>
                         </div>
-                    </div>
                 </div>`;
         }
-        document.querySelector('.listing').innerHTML = html;
+        document.querySelector('#listing').innerHTML = html;
     })
+
+

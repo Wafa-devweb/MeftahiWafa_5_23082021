@@ -2,6 +2,7 @@ body {
     font-family : 'Finger Paint','cursive';
     color : #7b5d46;
     padding: 0rem 1rem 1rem 1rem  ;
+    background-color: blanchedalmond;
 }
 /*Colorfooter = '#684833';
 ColorHeader = '#92735f';
@@ -46,6 +47,7 @@ section .mt-4{
 .navbar-expand-lg {
     padding: 0px;
     margin: 0rem 0rem 0rem -5rem;
+    background-color: blanchedalmond;
 }
 /***********main******************/
 @media (min-width: 1024px) {
@@ -54,16 +56,17 @@ section .mt-4{
     }
 }
 
-.w-full {
-    width: 100%;
-}
 section .p-4 {
     padding: 1rem;
+}
+.container-fluid{
+    background-color: blanchedalmond;
 }
 
 .items-stretch {
     align-items: stretch;
 }
+
 @media (min-width: 1024px){
     .lg\:w-1\/2{
         width: 50%;
@@ -145,13 +148,4 @@ button, select {
 
 #addToCart {
     color : #7b5d46; 
-}
-
-.fa-star {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color:blanchedalmond;
-}
-:root {
-    tab-size: 4;
 }

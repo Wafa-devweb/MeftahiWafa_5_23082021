@@ -1,6 +1,8 @@
 body {
     font-family : 'Finger Paint', cursive ;
     color : #7b5d46;
+    background-color: blanchedalmond;
+    line-height: inherit;
 }
 .navbar-expand-lg {
     padding: 0px;
@@ -8,6 +10,14 @@ body {
 }
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     margin: 0;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    text-decoration: none;
+    cursor: pointer;
 }
 /*Colorfooter = '#684833';
 ColorHeader = '#92735f';
@@ -23,7 +33,7 @@ footer {
 }
 
 header{
-    background-color: #92735f;
+    background-color: blanchedalmond;
 }
 main{
     background-color:#7b5d46;
@@ -38,18 +48,30 @@ a, p, h1, h3, h4, h5, h6 {
 .navbar-light .navbar-nav .nav-link.active {
     color: #7b5d46;
 }
+.mx-4{
+    margin-left: 1rem;
+    height: 5rem;
+}
 /**********corps de la pae avec la lise*********/
 @media (min-width: 768px){
     .md\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+@media (min-width: 1280px){
+    .xl\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
 
+#listing {
+    padding: 1rem;
+}
 .gap-4 {
     gap: 1rem;
 }
-.mt-4 {
-    margin-top: 1rem;
+.text-truncate{
+    margin-block-end: 1rem;
 }
 .grid {
     display: grid;
@@ -60,21 +82,8 @@ ol, ul {
     padding: 0;
 }
 
-body {
-    line-height: inherit;
-}
-
 :root {
     tab-size: 4;
-}
-
-*, ::before, ::after {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
-    border-color: #e5e7eb;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .p-4 {
@@ -96,11 +105,16 @@ body {
 h2, .ProductPrice, .ProductDescription{
     color: #7b5d46;
 }
-
+.img-thumbnail {
+    background-color: #7b5d46 ;
+    border-color: #7b5d46;
+}
 .font-bold {
     font-weight: 700;
 }
-
+.p-3 {
+    background-color: #7b5d46;
+}
 .w-full {
     width: 100%;
 }
@@ -152,14 +166,8 @@ img {
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
-.flex-grow {
-    flex-grow: 1;
-}
-.fa-star {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #7b5d46;
-}
-.flex.items-center {
-    word-spacing: -1ch;
+.btn-primary, .btn-secondary{
+    background-color: blanchedalmond;
+    color: #92735f;
+    border-color: blanchedalmond;
 }
