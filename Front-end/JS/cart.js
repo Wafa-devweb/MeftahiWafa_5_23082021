@@ -1,5 +1,5 @@
 let cart = document.querySelector(".cart-card__recap");
-let copyOfLS = JSON.parse(localStorage.getItem("produits"));
+let copyOfLS = JSON.parse(localStorage.getItem("products"));
 
 main();
 

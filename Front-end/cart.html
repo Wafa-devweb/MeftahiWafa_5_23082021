@@ -13,35 +13,28 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <!-- Javascript -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script type="text/javascript" src="/JS/script.js"></script>
+    
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/panier.css">
+    <link rel="stylesheet" href="CSS/cart.css">
     </head>
     <body>
         <!--Header + nav menu-->
-        <header class="navbar navbar-expand-lg navbar-light bg-white ">
-          <div class="container-fluid mx-2 mx-lg-5">
-              <img class="img-fluid mx-4 mx-lg-0 mr-auto w-15" src="C:/Users/wafa_/Documents/MeftahiWafa_5_23.08.2021/Back-end/images/logo.png" alt="logo orinoco">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse ms-4 bg-white text-dark" id="navbarScroll">
-                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="produit.html">Produits</a>
-                    </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-    </header>
+        <header>
+            <div class="container-fluid">
+                <div class="header-container">
+                    <div class="nav">
+                        <a href="./index.html"><h1 class="nav__logo">Orinoco</h1></a>
+                        <a href="./cart.html"><div class="nav__cart">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span></button>
+                            <i class="fas fa-shopping-cart"></i>
+                            </div>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </header>
     <main>
       <div class="container">
           <div class="cart-card">
@@ -54,7 +47,7 @@
 
                   </div>
                   <div class="width-to-empty-cart">
-                      <a href="./panier.html">
+                      <a href="/Front-end/cart.html">
                           <div class="cart-card__form__button to-empty-cart">
                               Vider le panier
                           </div>
@@ -112,7 +105,7 @@
               </div>
           </div>
           <div class="if-empty-cart">
-              <h2>Votre panier est vide. <a href="./index.html">Remplissez le d'abord !</a></h2>
+              <h2>Votre panier est vide. <a href="index.html">Remplissez le d'abord !</a></h2>
           </div>
       </div>
   </main>
@@ -127,6 +120,6 @@
               </ul>
               <p class="copyright text-center">Orinoco © 2021</p>
           </footer>
-          <script src="JS/panier.js"></script>
+          <script type="text/javascript" src="JS/cart.js"></script>
   </body>
 </html>
