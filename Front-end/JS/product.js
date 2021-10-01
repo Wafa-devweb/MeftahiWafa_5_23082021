@@ -13,11 +13,12 @@ const colorSelect = document.querySelector("#color-select");
 main();
 
 function main() {
-checkIf404();
+//checkIf404();
 getArticles();
 addToCart();
 }
 
+// Est ce que tu penses que cette fonction je dois l'enlever ??
 function checkIf404() {
 window.addEventListener("error", (e) => {
     let container = document.querySelector(".container");
@@ -29,7 +30,7 @@ window.addEventListener("error", (e) => {
     },
     true
 );
-}
+}//
 
 function getArticles() {
   // On récupère uniquement le produit dont on a besoin via le paramètre dans la requête
@@ -58,11 +59,12 @@ fetch(`http://localhost:3000/api/teddies/${id}`)
         currency: "EUR",
     }).format(article.price);
 
+    // boucle sur l'option couleur
     let colorSelect = document.getElementById("color-select");
     for (let i = 0; i < article.colors.length; i++) {
         let option = document.createElement("option");
         option.innerText = article.colors[i];
-        colorSelect.appendChild("optionsTpl");
+        colorSelect.appendChild(option);
     }
     });
 }
@@ -99,7 +101,8 @@ addToCartBtn.addEventListener("click", () => {
       // Effets visuels lors d'un ajout au panier
     confirmation.style.visibility = "visible";
     textConfirmation.innerHTML = `Vous avez ajouté ${bearNumber.value} nounours à votre panier !`;
-    setTimeout("location.reload(true);", 4000);
+    //setTimeout("location.reload(true);", 4000);
+    setTimeout(() => { window.location.href = "cart.html"},1000);
     } else {
     confirmation.style.visibility = "visible";
     textConfirmation.style.background = "red";
