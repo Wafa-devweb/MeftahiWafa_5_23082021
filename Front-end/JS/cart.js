@@ -103,7 +103,7 @@ function countTotalInCart() {
   // Additionner les valeurs du tableau pour avoir le prix total
   const reducer = (acc, currentVal) => acc + currentVal;
   arrayOfPrice = arrayOfPrice.reduce(reducer);
-
+   
   // Affichage du prix avec formatage €
   totalPrice.innerText = `Total : ${(arrayOfPrice = new Intl.NumberFormat(
     "fr-FR",

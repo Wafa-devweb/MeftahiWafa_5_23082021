@@ -10,6 +10,9 @@ a, p, h1, h3, h4, h5, h6 {
     text-decoration: none;
     cursor: pointer;
 }
+dl, ol, ul {
+    margin-bottom: 1rem;
+}
 *, *::before, *::after {
     margin: 0;
     padding: 0; 
@@ -28,7 +31,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    background: #92735f;
+    background: #684833;
     color: blanchedalmond;
 }
 
@@ -49,12 +52,14 @@ header{
 .nav__logo {
     color: blanchedalmond;
     font-size: 35px;
+    margin-left: 10px;
 }
 
 .nav__cart {
     position: relative;
     color: blanchedalmond;
     font-size: 30px;
+    margin-right: 10px;
 }
 
 .nav__cart:hover a {
@@ -69,6 +74,9 @@ header{
     padding: 3rem 0rem !important;
 }
 
+.text-center{
+    text-align: center;
+}
 /**************** Container - Main ************************/
 
 main .products-container {
@@ -139,6 +147,9 @@ main .products-container .products .product__infos {
     border-radius: 0 0 20px 20px;
     color: blanchedalmond;
 }
+.stretched-link {
+    height: 90%;
+}
 .product{
     background-color: #684833;
     color: blanchedalmond;
@@ -170,9 +181,18 @@ main .products-container .products .product__infos {
 footer {
     background-color:#684833;
     color: blanchedalmond;
+    padding: 1.5rem 0rem 1.5rem 0rem;
 }
+
 .text-center li a {
     color: blanchedalmond;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.list-inline-item {
+    display: inline-block;
 }
 
 
