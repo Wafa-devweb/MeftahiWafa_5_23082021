@@ -81,7 +81,6 @@ function displayCart() {
 }
 
 
-
 function countTotalInCart() {
   let arrayOfPrice = [];
   let totalPrice = document.querySelector(".total");
@@ -101,9 +100,12 @@ function countTotalInCart() {
   arrayOfPrice = arrayOfPrice.map((x) => parseFloat(x));
 
   // Additionner les valeurs du tableau pour avoir le prix total
+
+  
   const reducer = (acc, currentVal) => acc + currentVal;
   arrayOfPrice = arrayOfPrice.reduce(reducer);
-   
+
+
   // Affichage du prix avec formatage €
   totalPrice.innerText = `Total : ${(arrayOfPrice = new Intl.NumberFormat(
     "fr-FR",
@@ -188,6 +190,7 @@ function checkFormAndPostRequest() {
       };
 
       // Préparation du prix formaté pour l'afficher sur la prochaine page
+	  
       let priceConfirmation = document.querySelector(".total").innerText;
       priceConfirmation = priceConfirmation.split(" :");
 
