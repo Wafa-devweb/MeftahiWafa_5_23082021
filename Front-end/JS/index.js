@@ -4,7 +4,6 @@ function main() {
 getArticles();
 }
 
-
 // Récupérer les articles depuis l'API
 function getArticles() {
 fetch("http://localhost:3000/api/teddies")

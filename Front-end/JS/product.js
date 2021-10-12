@@ -95,6 +95,6 @@ addToCartBtn.addEventListener("click", () => {
     textConfirmation.style.color = "white";
     textConfirmation.style.whiteSpace = "normal";
     textConfirmation.innerText = `La quantité doit être comprise entre 1 et 99,.`;
-    }
+  }
 });
 }

@@ -86,7 +86,7 @@ function countTotalInCart() {
   let totalPrice = document.querySelector(".total");
 
   // On push chaque prix du DOM dans un tableau
-  let productPriceAccordingToQuantity = document.querySelectorAll(".price");
+  let productPriceAccordingToQuantity = document.querySelectorAll(".price"); 
   for (let price in productPriceAccordingToQuantity) {
     arrayOfPrice.push(productPriceAccordingToQuantity[price].innerHTML);
   }
