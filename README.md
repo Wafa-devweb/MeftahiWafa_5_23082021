@@ -20,11 +20,12 @@ L'objectif principale consiste en la création du front-end d'un site e-commerce
 - Node.js : installation a partir du Backend
 - Lite-server : installation à partir du Frontend  
 
-```cmd
+Commmande :
 npm install
 node install
 lite-server install
 ``
+
 #### Démarrage projet
 ```
 Lancement du backend : via la commande "node server"
