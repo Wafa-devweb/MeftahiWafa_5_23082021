@@ -14,17 +14,18 @@ L'objectif principale consiste en la création du front-end d'un site e-commerce
 - [x] Création d'une page de remerciement après achat
 - [x] Les pages devront être créés en HTML, CSS et javascript
 
-#### Prérequis
+#### Prérequis - Installation
 
-- Node.js : lancer node server a partir du Back-end
 - NPM (version 6.14.8 utilisée durant le développement)
-- Lite-server : lance le server à partir du Front-end  
-
-#### Installation
+- Node.js : installation a partir du Backend
+- Lite-server : installation à partir du Frontend  
 
 ```cmd
 npm install
 node install
 lite-server install
 ``
-
+#### Démarrage projet
+```
+Lancement du backend : via la commande "node server"
+Lancement du Frontend : via la commande "lite-server"
