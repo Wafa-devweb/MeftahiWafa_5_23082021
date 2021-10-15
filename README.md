@@ -21,10 +21,9 @@ L'objectif principale consiste en la création du front-end d'un site e-commerce
 - Lite-server : installation à partir du Frontend  
 
 Commmande :
-npm install
-node install
-lite-server install
-``
+1. npm install
+2. node install
+3. lite-server install
 
 #### Démarrage projet
 ```
